@@ -99,10 +99,12 @@ main {
 .ptext{
 	font-family: "Comic Sans MS", cursive, sans-serif;
 	text-align: justify;
-	font-size: 1.8vw;
+	font-size: 1.75vw;
 	background-color: #CCFFB3 ; 
 	border-radius: 5%;
 	padding: 1%;
+
+	font-max-height: 20px;
 	
 }
 

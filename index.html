@@ -43,11 +43,11 @@
 
 	<nav id="nav1" style="background-color: #FCAA00">
     <center>
-       	<b><a class="navit" href="index.html">Estrenos</a>
-        <a class="navit" href="cartelera.html">En Cartelera</a>
+       	<b><a class="navit" href="index.html" id="linknav1">Estrenos</a>
+        <a class="navit" href="#" id="linknav2">En Cartelera</a>
         <!--<a class="navit" href="clasicos.html">Clásicos</a>-->
-        <a class="navit" href="dulceria.html">Dulcería</a>
-        <a class="navit" href="contacto.html">Nuestros Cines</a></b>
+        <a class="navit" href="#" id="linknav3">Dulcería</a>
+        <a class="navit" href="contacto.html" id="linknav4">Nuestros Cines</a></b>
 
         <br>
       </center>
@@ -165,6 +165,18 @@ function carousell() {
 		var passw = prompt("Ingrese su contraseña ("+nick+")");	 	
 		if(passw != null){
 			alert("Bienvenido")
+
+
+
+
+          var a = document.getElementById('linknav2'); //or grab it by tagname getElementsByClassName
+          a.href = "cartelera.html"
+          var b = document.getElementById('linknav3'); //or grab it by tagname getElementsByClassName
+          b.href = "dulceria.html.html"
+          var c = document.getElementById('linknav4'); //or grab it by tagname getElementsByClassName
+          c.href = "contacto.html"
+
+
 		}
 	 }
 
@@ -181,6 +193,13 @@ function carousell() {
 			var email = prompt("Vincule su correo electrónico ");	
 			if(email != null){
 			alert("Bienvenido")
+
+          var a = document.getElementById('linknav2'); //or grab it by tagname getElementsByClassName
+          a.href = "cartelera.html"
+          var b = document.getElementById('linknav3'); //or grab it by tagname getElementsByClassName
+          b.href = "dulceria.html.html"
+          var c = document.getElementById('linknav4'); //or grab it by tagname getElementsByClassName
+          c.href = "contacto.html" 
 		}
 		}
 	 }
